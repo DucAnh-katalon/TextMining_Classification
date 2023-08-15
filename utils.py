@@ -9,7 +9,7 @@ def get_cfg():
     'model_name': "phobert-v2",
     'NUM_EPOCH': 50,
     'warm_up': 5,  
-    'max_len':120,
+    'max_len':256,
     'batch_size': 64,
     'n_classes':3,
     'output': 'outputs/',

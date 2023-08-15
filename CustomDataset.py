@@ -36,6 +36,6 @@ class SentimentDataset(Dataset):
     def get_input_data(self, row):
         # Preprocessing:w{remove icon, special character, lower}
         text = row['wseg']
-        text = ' '.join(simple_preprocess(text))
+        # text = ' '.join(simple_preprocess(text))
         label = self.label2id[row['label']]
         return text, label
